@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
     setTimeout(function () {
         iziToast.show({
             title: hello,
-            message: '欢迎来到 醉里起始页'
+            message: '欢迎来到 起始页'
         });
     }, 800);
 
@@ -86,7 +86,7 @@ function time() {
 //获取天气
 //每日限量 100 次
 //请前往 https://www.tianqiapi.com/index/doc?version=v6 申请（免费）
-fetch('https://yiketianqi.com/api?unescape=1&version=v6&appid=43986679&appsecret=TksqGZT7')
+fetch('http://v1.yiketianqi.com/api?unescape=1&version=v91&appid=31586187&appsecret=3bV18dRS')
     .then(response => response.json())
     .then(data => {
         //$('#wea_text').html(data.wea + '&nbsp;' + data.tem_night + '℃' + '&nbsp;~&nbsp;' + data.tem_day + '℃')
@@ -152,19 +152,12 @@ var styleContent = `
 color: rgb(30,152,255);
 `
 var title1 = 'Snavigation'
-var title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|                                                     
+var title2 = `                                                 
 `
 var content = `
 版 本 号：1.1
-更新日期：2022-07-12
+更新日期：2024-04-30
 
-Github:  https://github.com/imsyy/Snavigation
 `
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)
